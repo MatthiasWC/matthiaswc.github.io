@@ -79,7 +79,7 @@ psmain.startLifetime = spellWeapon.range / psmain.startSpeed.constant;
 {% endhighlight %}
 
 ![range-demonstration](/resources/devlog_1_range_demonstration.gif "Demonstration of limited range")
-<div style="font-size:85%;margin-top:-10px;">*A demonstration of limited range on the default weapon. Notice that shots explode when hitting the nearby trees but disappear before they can make contact with the farther trees.*</div>
+<div style="font-size:85%;margin-top:-10px;"><i>A demonstration of limited range on the default weapon. Notice that shots explode when hitting the nearby trees but disappear before they can make contact with the farther trees.</i></div>
 
 #### Day 4: Into Darkness
 

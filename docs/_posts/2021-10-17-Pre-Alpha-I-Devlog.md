@@ -108,3 +108,7 @@ The following table offers an overview of the re-designed Tri-Shot weapon, altho
 <u>10/16/2021 11:00 AM - 12:30 PM</u>
 
 WolverineSoft Studio-wide meeting. The programming leads had to move my *Scriptable Crosshairs* assignment into the next sprint, since I wasn't able to finish. Aside from that, it was fairly un-eventful.
+
+#### Total Hours
+
+Adding all of these little adventures together, I committed a grand total of 19 hours and 20 minutes to WolverineSoft Studio this sprint.

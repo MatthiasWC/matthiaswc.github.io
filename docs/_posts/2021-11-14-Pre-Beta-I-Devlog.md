@@ -91,11 +91,11 @@ public int dotEventDamage = 1;</code></pre>
         </tr>
         <tr>
             <td>11/13</td>
-            <td>1.5 hr.</td>
-            <td>Studio-wide meeting.</td>
+            <td>1 hr.</td>
+            <td>Studio-wide meeting. Discussed programming progress and remaining programming tasks, desired game elements that hadn't been designed yet, and art tasks for the next sprint. I talked briefly with the art team about the behavior of the flying enemy, since we plan on porting its behavior from the Phoenix enemy in Caduceus (one of our previous games), and I had been the one who designed that enemy.</td>
         </tr>
         <tr>
-            <td colspan="2"><b>Total time:</b></td><td><b>16 hr.</b></td>
+            <td colspan="2"><b>Total time:</b></td><td><b>15.5 hr.</b></td>
         </tr>
     </tbody>
 </table>

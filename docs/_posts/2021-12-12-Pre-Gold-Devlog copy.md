@@ -32,7 +32,7 @@ Unfortunately, due to a series of large assignments and the looming threat of fi
                 <li>They teleport back to their original position when the weapon fires but it doesn't look that bad.</li>
                 <li>Did some baseline tuning of the crosshair animation and the Spreadshot's charging parameters.</li>
                 <li>Ran a bunch of tests to make sure the Spreadshot was working.</li>
-                <li>Added the Spreadshot to the Player prefab, created ammo and weapon pickup prefabs</li>
+                <li>Added the Spreadshot to the Player prefab, created ammo and weapon pickup prefabs.</li>
             </ul>
             </td>
         </tr>

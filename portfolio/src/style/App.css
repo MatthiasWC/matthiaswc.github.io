@@ -1,0 +1,120 @@
+:root {
+  --pixel-scale: 2.5;
+  --character-width: 32px;
+  --character-height: 32px;
+  --highlight-bg-color: rgb(216, 220, 224);
+  --highlight-text-color: rgb(44, 46, 48);
+  --link-color: rgb(32, 226, 121);
+  --link-visited-color: rgb(29, 197, 143);
+  --link-selected-color: rgb(154, 255, 201);
+}
+
+@font-face {
+  font-family: tiny;
+  src: url(./fonts/04B_03.TTF)
+}
+
+@font-face {
+  font-family: small;
+  src: url(./fonts/BMmini.TTF)
+}
+
+@font-face {
+  font-family: title;
+  src: url(./fonts/Pokemon-Classic.ttf);
+}
+
+@font-face {
+  font-family: fancy-title;
+  src: url(./fonts/Fipps-Regular.otf);
+}
+
+img {
+  image-rendering: pixelated;
+  transform: scale(var(--pixel-scale));
+  -ms-transform: scale(var(--pixel-scale));
+  -webkit-transform: scale(var(--pixel-scale));
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+}
+
+p {
+  font-family: small;
+  font-weight: normal;
+  font-size: calc(7px * var(--pixel-scale));
+  line-height: 120%;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+p .tiny {
+  font-family: tiny;
+  font-weight: normal;
+  font-size: calc(5px * var(--pixel-scale));
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: fancy-title;
+  font-weight: normal;
+  /* Characters are 10 x 10 px */
+  font-size: calc(10px * var(--pixel-scale));
+}
+
+h2 {
+  font-family: title;
+  font-weight: normal;
+  /* Characters are 7 x 7 px */
+  font-size: calc(7px * var(--pixel-scale));
+}
+
+a:link {
+  /* color: var(--link-color); */
+  color: var(--link-color);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  /* color: var(--link-visited-color); */
+  color: var(--link-visited-color);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  /* color: rgb(255, 150, 150); */
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--link-selected-color);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+::selection {
+  /* Change highlight background color to black */
+  background: var(--highlight-bg-color);
+  /* Change highlight text color to red */
+  color: var(--highlight-text-color);
+}
+
+.ui-button:hover {
+  cursor: pointer;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform-origin: top center;
+  transform: translateX(-50%)
+             scale(var(--pixel-scale));
+}

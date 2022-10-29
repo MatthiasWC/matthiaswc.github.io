@@ -1,0 +1,107 @@
+.character {
+  z-index: 103;
+  position: absolute;
+  bottom: 31px;
+  left: 25px;
+  transform-origin: center;
+}
+
+/* .character-border {
+  display: inline-block;
+} */
+
+.character-name-container {
+  z-index: 104;
+  position: absolute;
+  /* bottom: -61.5px; */
+  width: calc((var(--character-width) + 13.75px) * var(--pixel-scale));
+  top: 67.5px;
+  left: -20.7px;
+  transform-origin: center;
+  /* padding: -10%; */
+}
+
+.character-name {
+  text-align: center;
+  margin-top: calc(0px * var(--pixel-scale));
+  margin-bottom: calc(-1px * var(--pixel-scale));
+  /* margin-left: calc(0px * var(--pixel-scale)); */
+  margin-right: calc(-1.5px * var(--pixel-scale));
+  color: rgba(216, 220, 224, 1);
+  /* color: rgba(94, 98, 104, 1); */
+}
+
+.no-media-image {
+  z-index: 102;
+  position: fixed;
+  left: 50vw;
+  bottom: calc(50vh + 15px + ((var(--character-height) + 42px) * var(--pixel-scale) / 2));
+}
+
+.content-media {
+  z-index: 102;
+  position: fixed;
+  left: 50vw;
+  bottom: calc(50vh + 15px + ((var(--character-height) + 42px) * var(--pixel-scale) / 2));
+  transform: translate(-50%, 50%);
+  transform-origin: center;
+  width: 70vw;
+  height: calc(60vh - (var(--character-height) * var(--pixel-scale)));
+  object-fit: contain;
+}
+
+.speech-bubble {
+  z-index: 102;
+  position: fixed;
+  box-sizing: border-box;
+  color: black;
+  bottom: 30px;
+  left: -30px;
+  width: 100vw;
+  height: calc((var(--character-height) + 42px) * var(--pixel-scale));
+}
+
+.speech {
+  margin-left: calc(var(--character-width) + 98px);
+  margin-right: 0px;
+  margin-top: calc(-8.5px * var(--pixel-scale));
+  word-wrap: break-word;
+}
+
+.next-background {
+  z-index: 103;
+  position: fixed;
+  background-image: linear-gradient(-90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 200px;
+  max-width: 17vw;
+}
+
+.next-button {
+  z-index: 104;
+  position: fixed;
+  bottom: 59vh;
+  right: 30px;
+  pointer-events: none;
+}
+
+.back-background {
+  z-index: 103;
+  position: fixed;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 200px;
+  max-width: 17vw;
+}
+
+.back-button {
+  z-index: 104;
+  position: fixed;
+  bottom: 59vh;
+  left: 30px;
+  pointer-events: none;
+}

@@ -1,0 +1,15 @@
+.background-darkener {
+  position: fixed;
+  z-index: 101;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.exit-button {
+  z-index: 106;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+}

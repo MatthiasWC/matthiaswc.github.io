@@ -1,0 +1,18 @@
+.outline-select {
+  cursor: pointer;
+  position: absolute;
+}
+
+.outline-select:hover {
+  --border-size: 1px;
+  --border-size-neg: calc(-1 * var(--border-size) + 0.5px);
+  --border-color: white;
+  filter: drop-shadow(var(--border-size-neg) 0px var(--border-color))
+          drop-shadow(var(--border-size) 0px var(--border-color))
+          drop-shadow(0px var(--border-size-neg) var(--border-color))
+          drop-shadow(0px var(--border-size) var(--border-color));
+  -webkit-filter: drop-shadow(var(--border-size) 0 var(--border-color))
+                  drop-shadow(var(--border-size-neg) 0 var(--border-color))
+                  drop-shadow(0 var(--border-size) var(--border-color))
+                  drop-shadow(0 var(--border-size-neg) var(--border-color));
+}

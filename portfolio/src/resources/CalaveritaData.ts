@@ -2,6 +2,9 @@ import { EncounterData } from '../components/Encounter';
 
 const locationImage = process.env.PUBLIC_URL + '/images/locations/locations2.png';
 const characterImage = process.env.PUBLIC_URL + '/images/characters/character_2.png';
+const webBuild = process.env.PUBLIC_URL + '/Calaverita%20Web%20Build';
+const windowsBuild = process.env.PUBLIC_URL + '/Calaverita%20Windows%20Build.zip';
+const macBuild = process.env.PUBLIC_URL + '/Calaverita%20Mac%20Build.app.zip';
 
 export const calaveritaData: EncounterData = {
   order: 2,
@@ -35,9 +38,11 @@ export const calaveritaData: EncounterData = {
     },
     {
       text: `You can play <em>Calaverita</em> in your browser 
-      <a href=''>here</a> or download it for yourself <a href=''>here</a>.
-      I recommend downloading it, but if you'd rather play in-browser, make 
-      sure that hardware `,
+      <a href='` + webBuild + `'>here</a> or download it for yourself 
+      here (<a href='` + windowsBuild + `' download>Windows</a>, 
+      <a href='` + macBuild + `' download>Mac</a>). I recommend downloading 
+      it, but if you'd rather play in-browser, make sure that hardware 
+      acceleration is enabled in your browser settings.`,
       media: ''
     },
   ]
